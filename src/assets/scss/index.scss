@@ -6,3 +6,21 @@
   box-sizing: border-box;
   font-family: "DM Sans", serif;
 }
+
+.home {
+  width: 100%;
+  height: fit-content;
+  padding: 10px 100px;
+  h2 {
+    color: #0085db;
+    margin-bottom: 1rem;
+  }
+  ul {
+    li {
+      a {
+        text-decoration: none;
+        color: #0085db;
+      }
+    }
+  }
+}
