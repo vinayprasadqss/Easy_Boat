@@ -1,0 +1,124 @@
+.successPop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  .msg {
+    width: 500px;
+    height: fit-content;
+    padding: 50px 50px;
+    border-radius: 10px;
+    height: fit-content;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+    h4 {
+      color: #0085db;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+    p {
+      color: #595959;
+      font-size: 1rem;
+    }
+    button {
+      background: #0085db;
+      width: 100%;
+      height: 40px;
+      border-radius: 50px;
+      border: none;
+      outline: none;
+      color: #fff;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.cancelPop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  .msg {
+    width: 500px;
+    height: fit-content;
+    padding: 50px 50px;
+    border-radius: 10px;
+    height: fit-content;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+    h4 {
+      color: #d4001c;
+      font-weight: 700;
+      font-size: 1.3rem;
+    }
+    p {
+      color: #595959;
+      font-size: 1rem;
+    }
+    button {
+      background: #d4001c;
+      width: 100%;
+      height: 40px;
+      border-radius: 50px;
+      border: none;
+      outline: none;
+      color: #fff;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .cancelPop {
+    .msg {
+      padding: 2rem 1rem;
+      width: calc(100% - 30px);
+    }
+  }
+  .successPop {
+    .msg {
+      padding: 2rem 1rem;
+      width: calc(100% - 30px);
+    }
+  }
+}
